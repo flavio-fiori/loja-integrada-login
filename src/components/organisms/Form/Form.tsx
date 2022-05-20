@@ -3,7 +3,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
 import Input from "../../atoms/Input";
-import { Button } from "../../atoms/Button/Button.styles";
+import Button from "../../atoms/Button";
 
 interface IFormInputs {
   user: string;
@@ -31,7 +31,7 @@ export default function Form() {
         type="text"
         label="User"
         error={errors.user?.message}   
-        {...register('user')}     
+        {...register('user')}            
         />
       <Input
         type="password"
@@ -39,7 +39,7 @@ export default function Form() {
         error={errors.password?.message}
         {...register('password')}     
       />
-      <Button>Login</Button>
+      <Button type="submit">Login</Button>
     </form>
   );
 }
