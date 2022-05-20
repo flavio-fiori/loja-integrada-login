@@ -1,4 +1,4 @@
-import { InputHTMLAttributes } from 'react';
+import { InputHTMLAttributes, forwardRef } from 'react';
 import * as S from './Input.styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -6,14 +6,17 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   error?: string;
   type?: string;
+  ref?: any;
 }
 
-export default function Input({ name, label, error, type = "text", ...rest }: InputProps) {
+const Input: React.FC<InputProps> = forwardRef(({ name, label, type, error, ...rest }, ref) => {
   return (
     <S.Container>
       {label && <S.Label htmlFor={name}>{label}</S.Label>}
-      <S.Input name={name} type={type} {...rest} />
+      <S.Input name={name} type={type} ref={ref} {...rest} />
       {error && <S.Error>{error}</S.Error>}
     </S.Container>
   )
-}
+})
+
+export default Input;
