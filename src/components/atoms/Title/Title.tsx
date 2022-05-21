@@ -1,12 +1,10 @@
-import { ReactNode } from 'react'
-import * as S from './Title.styles'
+import { ReactNode } from 'react';
+import * as S from './Title.styles';
 
 interface TitleProps {
-  children: ReactNode;
+	children: ReactNode;
 }
 
 export default function Title({ children }: TitleProps) {
-  return (
-    <S.Title>{children}</S.Title>
-  )
+	return <S.Title>{children}</S.Title>;
 }
