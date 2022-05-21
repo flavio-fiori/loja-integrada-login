@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import bg from '../../../images/background.jpg'
 
-export const Main = styled.main`
+export const Container = styled.section`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -37,7 +37,7 @@ export const Background = styled.section`
   }
 `;
 
-export const Content = styled.section`
+export const Main = styled.main`
   width: 35%;
   height: 100vh;
   display: flex;

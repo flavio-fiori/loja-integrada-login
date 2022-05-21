@@ -6,7 +6,7 @@ import * as S from './ContentSocial.styles';
 export default function ContentSocial() {
   return (
     <S.Container>
-      <Text>or sign up using</Text>
+      <Text>ou cadastre-se usando:</Text>
       <ListSocialButtons />
     </S.Container>
   );
