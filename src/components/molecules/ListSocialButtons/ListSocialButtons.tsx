@@ -5,8 +5,12 @@ import * as S from './ListSocialButtons.styles'
 export default function ListSocialButtons() {
   return(
     <S.Container>
-      <SocialButton><FaFacebookF /></SocialButton>
-        <SocialButton><FaTwitter /></SocialButton>
+      <SocialButton type="button" title="Entrar com o Facebook">
+        <FaFacebookF />
+      </SocialButton>
+      <SocialButton type="button" title="Entrar com o Twitter">
+        <FaTwitter />
+      </SocialButton>
     </S.Container>
   )
 }

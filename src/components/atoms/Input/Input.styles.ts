@@ -21,7 +21,7 @@ export const Label = styled.label`
   display: block;
   color: ${({ theme }) => theme.palette.text};
   font-size: 0.875rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 `;
 
 export const Error = styled.span`
