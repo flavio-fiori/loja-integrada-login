@@ -1,3 +1,3 @@
-import ContentSocial from './ContentSocial'
+import ContentSocial from './ContentSocial';
 
 export default ContentSocial;

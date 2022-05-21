@@ -1,12 +1,10 @@
-import { ReactNode } from 'react'
-import * as S from './Text.styles'
+import { ReactNode } from 'react';
+import * as S from './Text.styles';
 
 interface TextProps {
-  children: ReactNode;
+	children: ReactNode;
 }
 
 export default function Text({ children }: TextProps) {
-  return (
-    <S.Text>{children}</S.Text>
-  )
+	return <S.Text>{children}</S.Text>;
 }
