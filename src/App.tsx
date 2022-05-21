@@ -1,16 +1,23 @@
-import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import Login from './components/pages/Login';
+import { ApolloProvider } from '@apollo/client';
+import { ToastContainer } from 'react-toastify';
 
+import Login from './components/pages/Login';
 import GlobalStyle from './styles/reset';
 import { theme } from './styles/theme';
+import { client } from 'graphql/apollo';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 	return (
-		<ThemeProvider theme={theme}>
-			<GlobalStyle />
-			<Login />
-		</ThemeProvider>
+		<ApolloProvider client={client}>
+			<ThemeProvider theme={theme}>
+				<ToastContainer />
+				<GlobalStyle />
+				<Login />
+			</ThemeProvider>
+		</ApolloProvider>
 	);
 }
 
