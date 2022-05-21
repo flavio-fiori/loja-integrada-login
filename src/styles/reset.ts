@@ -28,4 +28,8 @@ export default createGlobalStyle`
     cursor: pointer;
   }
   
+  fieldset {
+    border: 0;
+  }
+
 `
