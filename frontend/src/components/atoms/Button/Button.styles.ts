@@ -6,9 +6,9 @@ export const Button = styled.button`
 	font-size: 1.25rem;
 	text-transform: uppercase;
 	font-weight: bold;
-	background-color: ${({ theme }) => theme.palette.primary};
-	color: ${({ theme }) => theme.palette.text};
-	border-radius: ${({ theme }) => theme.borderRadius};
+	background-color: var(--primary);
+	color: var(--text);
+	border-radius: var(--border-radius);
 	transition: filter 0.7s ease-in-out;
 	margin-top: 2rem;
 	&:hover {

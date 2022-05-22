@@ -6,5 +6,8 @@ interface TitleProps {
 }
 
 export default function Title({ children }: TitleProps) {
-	return <S.Title>{children}</S.Title>;
+	if (!children) {
+		return <></>;
+	}
+	return <S.Title data-testid="title">{children}</S.Title>;
 }

@@ -8,9 +8,9 @@ export const Button = styled.button`
 	justify-content: center;
 	border-radius: 100%;
 	background-color: transparent;
-	border: 0.125rem solid ${({ theme }) => theme.palette.primary};
+	border: 0.125rem solid var(--primary);
 	margin: 0 0.25rem;
 	& > svg {
-		color: ${({ theme }) => theme.palette.primary};
+		color: var(--primary);
 	}
 `;

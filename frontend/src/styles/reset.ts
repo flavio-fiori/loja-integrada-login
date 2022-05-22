@@ -2,6 +2,14 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
+  :root {
+    --background: #1a202c;
+    --primary: #81e6d9;
+    --text: #ffffff;
+    --error: #ff0000;
+    --border-radius: 0.75rem;
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +27,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: #1a202c;
+    background-color: var(--background);
   }
 
   button {
