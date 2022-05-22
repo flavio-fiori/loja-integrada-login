@@ -2,8 +2,6 @@
 
 **Objetivo**: Criar uma API de login para uma aplicação web.
 
-## Demo
-
 ## Pré requisitos
 
 ## Instalação
