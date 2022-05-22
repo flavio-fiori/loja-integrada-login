@@ -20,6 +20,8 @@ cd frontend && npm install
 
 > Para rodar os testes da aplicação, rode: npm run test
 
+> Para rodar os testes e2e, rode: npm run cypress:open
+
 Após a instalação faça a copia do arquivo .env.example para um arquivo chamado .env.local
 
 ```
