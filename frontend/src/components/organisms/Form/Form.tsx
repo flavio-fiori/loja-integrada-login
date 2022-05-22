@@ -47,11 +47,20 @@ export default function Form() {
 			},
 		})
 			.then((response) => {
+				console.log(response);
 				const {
 					data: { auth },
 				} = response;
+
 				if (!auth) {
 					sumCounter();
+
+					toast({
+						message: 'Ops! Seu login não foi encontrado!',
+						type: 'error',
+					});
+
+					return;
 				}
 
 				toast({
