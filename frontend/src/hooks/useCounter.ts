@@ -7,7 +7,7 @@ export default function useCounter() {
 	useEffect(() => {
 		if (counter >= 5) {
 			toast({
-				message: 'Você excedeu o numero de tentativas',
+				message: 'Você excedeu o número de tentativas',
 				type: 'error',
 			});
 		}
