@@ -12,9 +12,14 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 const Input: React.FC<InputProps> = forwardRef(
 	({ id, label, type, error, ...rest }, ref) => {
 		return (
-			<S.Container>
-				{label && <S.Label htmlFor={id}>{label}</S.Label>}
+			<S.Container data-testid="input">
+				{label && (
+					<S.Label htmlFor={id} data-testid="input-label">
+						{label}
+					</S.Label>
+				)}
 				<S.Input
+					data-testid="input-field"
 					aria-invalid={!!error}
 					name={id}
 					id={id}
@@ -22,7 +27,11 @@ const Input: React.FC<InputProps> = forwardRef(
 					ref={ref}
 					{...rest}
 				/>
-				{error && <S.Error role="alert">{error}</S.Error>}
+				{error && (
+					<S.Error role="alert" data-testid="input-error">
+						{error}
+					</S.Error>
+				)}
 			</S.Container>
 		);
 	},

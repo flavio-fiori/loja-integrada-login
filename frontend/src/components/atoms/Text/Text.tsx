@@ -6,5 +6,8 @@ interface TextProps {
 }
 
 export default function Text({ children }: TextProps) {
-	return <S.Text>{children}</S.Text>;
+	if (!children) {
+		return <></>;
+	}
+	return <S.Text data-testid="text">{children}</S.Text>;
 }

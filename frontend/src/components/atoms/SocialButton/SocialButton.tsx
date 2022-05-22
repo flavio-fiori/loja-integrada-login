@@ -5,5 +5,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export default function Button({ children }: ButtonProps) {
-	return <S.Button>{children}</S.Button>;
+	if (!children) {
+		return <></>;
+	}
+	return <S.Button data-testid="social-button">{children}</S.Button>;
 }

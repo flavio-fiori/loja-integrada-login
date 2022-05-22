@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.label`
 	display: flex;
-	color: ${({ theme }) => theme.palette.text};
+	color: var(--text);
 	font-size: 0.875rem;
 	margin-top: 1.5rem;
 	overflow: hidden;
+	cursor: pointer;
 `;
 
 export const Checkbox = styled.input`
@@ -16,7 +17,7 @@ export const Checkbox = styled.input`
 		width: 0.75rem;
 		height: 0.75rem;
 		margin-right: 0.5rem;
-		border: 1px solid ${({ theme }) => theme.palette.primary};
+		border: 1px solid var(--primary);
 	}
 
 	&:hover + span,
@@ -25,6 +26,6 @@ export const Checkbox = styled.input`
 	}
 
 	&:checked + span {
-		background-color: ${({ theme }) => theme.palette.primary};
+		background-color: var(--primary);
 	}
 `;

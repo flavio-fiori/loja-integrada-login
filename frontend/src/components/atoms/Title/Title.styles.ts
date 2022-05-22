@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled.legend`
-	color: ${({ theme }) => theme.palette.text};
+	color: var(--text);
 	font-size: 1.75rem;
 	font-weight: bold;
 	text-transform: uppercase;
