@@ -20,7 +20,7 @@ cd frontend && npm install
 
 > Para rodar os testes da aplicação, rode: npm run test
 
-> Para rodar os testes e2e, rode: npm run cypress:open
+> Para rodar os testes e2e, rode: npm run cypress:open ou npm run cypress
 
 Após a instalação faça a copia do arquivo .env.example para um arquivo chamado .env.local
 
@@ -36,6 +36,7 @@ A estrutura de pasta dos componentes segue a base do Atomic Design.
 - [React Hook Form](https://react-hook-form.com/)
 - [Styled Components](https://styled-components.com/)
 - [React Testing Library](https://testing-library.com/)
+- [Apollo Client](https://www.apollographql.com/docs/react/)
 
 ## Status
 
